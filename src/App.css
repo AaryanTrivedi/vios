@@ -1,0 +1,106 @@
+/* General Styles */
+#root {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #000;
+  color: rgb(255, 106, 0);
+  font-family: 'Courier New', Courier, monospace;
+ }
+ 
+ .instructions {
+  position: fixed;
+  transform: translateY(-50%);
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 106, 0);
+  background-color: #000;
+  padding: 5px;
+  border-radius: 5px;
+  animation: flicker 0.002s linear infinite;
+ }
+ 
+ /* Footer Styles */
+ .footer {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  font-size: 0.8em;
+  color: rgb(255, 106, 0);
+  background-color: #000;
+  padding: 5px 10px;
+  border-radius: 5px;
+ }
+ 
+ .ascii-art {
+  font-family: 'Courier New', Courier, monospace;
+  color: rgb(255, 106, 0);
+  background-color: #000;
+  padding: 10px;
+  margin-bottom: 20px;
+  transform: skewX(-5deg);
+  animation: flicker 0.003s linear infinite;
+ }
+ 
+ /* Button Styles */
+ .m {
+  border: 2px solid rgb(255, 106, 0);
+  background-color: #000;
+  color: rgb(255, 106, 0);
+  padding: 5px 3px;
+  margin: 5px 0;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  animation: flicker 0.0005s linear infinite;
+ }
+ 
+ .m:hover,
+ .m.selected {
+  background-color: rgb(255, 106, 0);
+  color: #000;
+ }
+ 
+ /* Flickering effect */
+ @keyframes flicker {
+   0% { opacity: 1; }
+   50% { opacity: 0.1; }
+   100% { opacity: 0.9; }
+ }
+ 
+ /* Links and Headings */
+ a, h1 {
+  color: rgb(255, 106, 0);
+  text-decoration: inherit;
+ }
+ 
+ a:hover {
+  color: rgb(255, 106, 0);
+ }
+ 
+ h1 {
+  font-size: 2.2em;
+  line-height: 1.1;
+ }
+ 
+ /* Button Styles */
+ button {
+  border-radius: 8px;
+  border: 1px solid rgb(255, 106, 0);
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #000;
+  color: rgb(255, 106, 0);
+  cursor: pointer;
+  transition: border-color 0.25s;
+ }
+ 
+ button:hover {
+  border-color: rgb(255, 106, 0);
+ }
+ 
+ button:focus,
+ button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+ }
+ 

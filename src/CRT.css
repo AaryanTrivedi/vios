@@ -1,0 +1,31 @@
+/* CRT.css */
+
+.crt-container {
+  width: 640px; /* CRT resolution */
+  height: 400px; /* CRT resolution */
+  margin: 0 auto; /* Center the container */
+  background-color: #000; /* Black background */
+  overflow: hidden;
+  
+}
+
+/* CRT Effect */
+.crt-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+  background-size: 100% 2px;
+  background-position: 0 0;
+  z-index: 1;
+  animation: crtEffect 0.001s linear infinite; /* Updated animation duration */
+}
+
+/* CRT Effect Animation */
+@keyframes crtEffect {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100%; }
+}
